@@ -92,7 +92,7 @@ button.ghost:hover { border-color: #33436b; }
 .legend { display: flex; gap: 14px; margin-top: 9px; flex-wrap: wrap; }
 .legend span { font-size: 11px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
 .legend i { width: 9px; height: 9px; border-radius: 50%; }
-.curve { position: absolute; right: 16px; bottom: 92px; width: 240px; height: 74px; background: rgba(9,13,24,.72); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: 11px; z-index: 3; }
+.stage canvas.curve { position: absolute; inset: auto 16px 92px auto; right: 16px; bottom: 92px; width: 240px; height: 74px; background: rgba(9,13,24,.72); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: 11px; z-index: 3; }
 
 /* right panel */
 .rt { padding: 16px 18px; }
@@ -126,5 +126,5 @@ button.ghost:hover { border-color: #33436b; }
   .app { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
   .left { height: auto; max-height: 42dvh; border-right: 0; border-bottom: 1px solid var(--line); }
   .stage { height: 58dvh; }
-  .curve { display: none; }
+  .stage canvas.curve { display: none; }
 }
